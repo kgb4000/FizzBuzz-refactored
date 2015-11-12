@@ -11,10 +11,12 @@ $(function fizzBuzzer() {
 	userInput.focus();
 
 	userInput.keydown(function(e) {
-
-		if(e.keyCode >= 48 || e.keyCode <= 57) {
+		console.log(e);
+		console.log("keys pressed");
+		if(e.keyCode >= 48 && e.keyCode <= 57) {
 			return true;
 		} else {
+			console.log("Off");
 			e.preventDefault();
 		}
 	});
